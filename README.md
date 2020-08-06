@@ -12,11 +12,11 @@ Ridge and Lasso regression are two examples of penalized estimation. Penalized e
 
 In Ridge regression, the cost function is changed by adding a penalty term to the square of the magnitude of the coefficients.
 
-$$ \text{cost_function_ridge}= \sum_{i=1}^n(y_i - \hat{y})^2 = \sum_{i=1}^n(y_i - \sum_{j=1}^k(m_jx_{ij})-b)^2 + \lambda \sum_{j=1}^p m_j^2$$
+<img src="https://render.githubusercontent.com/render/math?math=\text{Ridge cost function}= \sum_{i=1}^n(y_i - \hat{y})^2 = \sum_{i=1}^n(y_i - \sum_{j=1}^k(m_jx_{ij})-b)^2 %2b \lambda \sum_{j=1}^p m_j^2"> 
 
 Lasso regression is very similar to Ridge regression, except that the magnitude of the coefficients are not squared in the penalty term.
 
-$$ \text{cost_function_lasso}= \sum_{i=1}^n(y_i - \hat{y})^2 = \sum_{i=1}^n(y_i - \sum_{j=1}^k(m_jx_{ij})-b)^2 + \lambda \sum_{j=1}^p \mid m_j \mid$$
+<img src="https://render.githubusercontent.com/render/math?math=\text{LASSO cost function}= \sum_{i=1}^n(y_i - \hat{y})^2 = \sum_{i=1}^n(y_i - \sum_{j=1}^k(m_jx_{ij})-b)^2 %2b \lambda \sum_{j=1}^p \mid m_j \mid"> 
 
 
 ## AIC and BIC 
@@ -25,11 +25,11 @@ In this section you'll also be introduced to two new measures: AIC and BIC, whic
 
 The formula for the AIC, invented by Hirotugu Akaike in 1973 and short for "Akaike's Information Criterion" is given by: 
 
-$$ \text{AIC(model)} = - 2 * \text{log-likelihood(model)} + 2 * \text{length of the parameter space} $$ 
+ <img src="https://render.githubusercontent.com/render/math?math=\text{AIC(model)} = - 2 * \text{log-likelihood(model)} %2b 2 * \text{length of the parameter space} "> 
 
 The BIC (Bayesian Information Criterion) is very similar to the AIC and emerged as a Bayesian response to the AIC, but can be used for the exact same purposes. 
 
-$$ \text{BIC(model)} = -2 * \text{log-likelihood(model)} + \text{log(number of observations)} * \text{(length of the parameter space)} $$ 
+ <img src="https://render.githubusercontent.com/render/math?math=\text{BIC(model)} = -2 * \text{log-likelihood(model)} %2b \text{log(number of observations)} * \text{(length of the parameter space)} "> 
 
 
 Lower the values of AIC and BIC, the better your model is performing.
